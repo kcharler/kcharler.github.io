@@ -1,0 +1,118 @@
+body{
+    font-family: 'K2D', sans-serif;
+font-family: 'Mali', cursive;
+font-size: 18px;
+vertical-align: middle;
+
+}
+header {
+    background-color: #2B7Cff;
+    text-align: center;
+    padding: .25rem;
+    display: inline-block;
+    width: 100%;
+}
+header > img {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    vertical-align: middle;
+    position: relative;
+    left: -50px;
+}
+.headertext {
+    display: inline-block;
+    vertical-align: middle; 
+}
+.headertext h1 {
+    font-size: 3rem;
+    margin: 15px auto;
+    color: #000;
+}
+.subheading {
+    font-size: 1.1rem;
+    color: rgb(0, 87, 25, 1);
+    font-style: italic;  
+    margin-bottom: 15px;
+}
+.currentconditions {
+    display: inline-block;
+    margin: 1rem 0 1rem 5rem;
+    padding: 1.2rem;
+    vertical-align: middle;
+    color: #fff;
+    background-color:#3A557F ;
+    border: 1pt solid #2063CC;
+    font-size: 1.1rem;
+    transform: rotate(-90deg);
+}
+.currentconditions img{
+    width: 100px;
+    height: auto;
+}
+.currentconditions p{
+    transform: rotate(90deg);
+}
+#primaryNav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav button {
+    margin: 5px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+}
+
+.hide{
+    overflow: hidden;
+  background-color: #333;
+}
+.hide a {
+    float: left;
+    color: aqua;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    overflow: hidden;
+    
+}
+.hide a:hover {
+    background-color: #143E7F;
+    color: white;
+}
+.home-page {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: stretch;
+    align-items: stretch;
+}
+.home-page article:first-child {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.home-page article:first-child img {
+    margin-top: 3px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.home-page article:first-child h2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+}
+.home-page article:first-child p {
+    grid-row-start: 3;
+}
+.home-page article {
+    display: flex;
+    flex-direction: column;
+}
+.home-page article img {
+    align-content: flex-end;
+}
