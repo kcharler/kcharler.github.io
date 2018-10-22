@@ -1,0 +1,67 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+    header > img {
+        width: 125px;
+        margin-left: 5px;
+        left: -30px;
+    }
+    .headertext {
+        position: relative;
+        left: -20px;
+    }
+    .currentconditions {
+        display: inline-block;
+        margin: 1rem 0 1rem .5rem;
+        padding: 1.2rem;
+        vertical-align: middle;
+        color: #fff;
+        background-color:#3A557F ;
+        border: 1pt solid #2063CC;
+        font-size: 1.1rem;
+        transform: rotate(-90deg);
+    }
+    .currentconditions img{
+        width: 70px;
+        height: auto;
+    }
+    .currentconditions p{
+        transform: rotate(90deg);
+        font-size: 15px;
+    }
+    
+    nav {
+        background: #243d38; /* Old browsers */
+        background: -moz-linear-gradient(top, #243d38 1%, #393d60 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #243d38 1%,#393d60 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #243d38 1%,#393d60 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#243d38', endColorstr='#393d60',GradientType=0 ); /* IE6-9 */
+    }
+
+    nav button { display:none; }      /* hamburger button does not need to be shown */
+
+    nav ul.hide {display: block;}
+    nav ul {margin-left: 2%;} 
+   
+    nav ul li {
+        float: left;
+
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgb(0, 0, 0.3);
+        padding: .8rem 1rem;
+    }
+    .sideByside section {
+        position: relative;
+        top: -370px;
+    }
+    .forecast {
+        display: inline-block;
+        text-align: center;
+        width: 99%;
+        align-self: stretch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

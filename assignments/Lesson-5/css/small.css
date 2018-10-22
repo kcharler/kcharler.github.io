@@ -1,0 +1,154 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+body{
+    font-family: 'K2D', sans-serif;
+font-family: 'Mali', cursive;
+font-size: 18px;
+vertical-align: middle;
+}
+header {
+    background-color: #2B7Cff;
+    text-align: center;
+    padding: .25rem;
+    display: inline-block;
+    width: 100%;
+}
+header > img {
+    display: inline-block;
+    width: 100px;
+    margin: 10px;
+    display: inline-block;    
+    height: auto;
+    vertical-align: middle;
+    position: relative;
+    font-size: 15px;
+}
+.headertext {
+    display: inline-block;
+    vertical-align: middle; 
+}
+.headertext h1 {
+    font-size: 3rem;
+    margin: 15px auto;
+    color: #000;
+}
+.subheading {
+    font-size: 1.1rem;
+    color: #000;
+    font-style: italic;  
+    margin-bottom: 15px;
+}
+.currentconditions {
+    display: none;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+nav {
+    background-color: #000;
+    font-family: 'Mali', cursive;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #2B7Cff;
+    border: solid;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+}
+
+nav ul li.active a {background: rgba(0, 0, 0, .2); color: #fff;}
+nav ul li a:hover {background: rgba(0, 0, 0, .4); color: #143E7F;}
+
+nav ul.hide {display: none;}
+.sideByside h2 {
+    text-align: center;
+}
+.sideByside section {
+    position: relative;
+    top: -230px;
+    left: 20px;
+    background-color: #143E7F;
+    background-size: 50px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+}
+
+.weatherdetails value {
+    float:right;
+}
+.forecast {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+} /*end medium */
+
+
+
+
+
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+} /*end large */

@@ -1,0 +1,74 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+    header > img {
+        display: inline-block;
+        width: 200px;
+        height: auto;
+        vertical-align: middle;
+        position: relative;
+        left: -50px;
+    }
+    .currentconditions img{
+        width: 100px;
+        height: auto;
+    }
+   
+    .sideByside img {
+        position: relative; 
+        width: 99%;     
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .sideByside section {
+        position: relative;
+        top: -470px;
+    }
+    
+    
+    .forecast h3 {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        border: 1px solid #143E7F;
+        background-color: #2063CC;
+        color: white;
+        border-color: #143E7F;
+    }
+    .forecast table {
+        width: 100%;
+        background-color: #2B7Cff;
+        color: aqua;
+    }
+    .town-article {
+        display: block;
+        border: 1px solid #333;
+    }
+    .town-article img {
+        position: relative;
+        float: right;
+        width: 40%;
+        top: -50px;
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        font-size: .7rem;
+        padding-top: 5px;
+        margin-top: auto;
+        flex-shrink: 0;
+        magin
+    }
+
+
+
+
+
+        
+
+  

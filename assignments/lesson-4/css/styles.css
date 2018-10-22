@@ -1,9 +1,8 @@
 body{
     font-family: 'K2D', sans-serif;
-font-family: 'Mali', cursive;
-font-size: 18px;
-vertical-align: middle;
-
+    font-family: 'Mali', cursive;
+    font-size: 18px;
+    vertical-align: middle;
 }
 header {
     background-color: #2B7Cff;

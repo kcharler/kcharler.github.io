@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Preston Weather Page">
+    <meta name="author" content="Romeo Koui">
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>Main Page | L'harmattan</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=K2D%7cMali" rel="stylesheet">
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+  
+
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header>
+        <img src="images/weather.png" alt="The weather site logo">
+        <div class="headertext">
+            <h1>L'harmattan</h1>
+            <div class="subheading">Leave getting wet or find a shelter</div>
+        </div>
+        <div class="currentconditions">
+            <img src="images/sunny.png" alt="Current Weather Conditions icon">
+            <p>Sunny</p>
+        </div>
+    </header>
+
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li>
+                <a href="#" onclick="">Menu</a>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- CONTENT HERE -->
+    <main class="clearfix">
+
+        <div class="sideByside">
+            <h2>Preston</h2>
+            <img src="images/preston-image.jpeg" alt="preston" sizes="40vw" srcset="images/preston-small.jpeg 200w">
+            <section class="weather">
+                <h3>Weather Summary</h3>
+                <div class="weatherdetails">
+                    <p class="label">Currently: Sunny</p>
+                    <p>Temperature: <span id="currentTemp">00</span>&deg;</p>
+                    <p>Humidity: <span id="currentHum">00</span></p>
+                    <p class="label">Precipitation: 0 inches</p>
+                    <p>Wind Speed: <span id="currentWind">00</span></p>
+                    <img src="images/weather.png" alt="current weather" id="weather_icon">
+                </div>
+            </section>
+        </div>
+
+        <section class="forecast">
+            <h3>High Temperature Forecast for <span id="place">city</span></h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Forecast</th>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article class="town-article">
+            <h3 class="article-head">Preston Breaks Record</h3>
+            <img src="images/preston.jpeg" alt="story image" sizes="50vw" srcset="images/town-small.jpeg 250w">
+            <p>
+                In Preston, the summers are warm and mostly clear, the winters are freezing and partly cloudy, and it
+                is dry year round. Over the course of the year, the temperature typically varies from 15°F to 88°F and
+                is rarely below 1°F or above 94°F.
+
+                Based on the tourism score, the best time of year to visit Preston for warm-weather activities is from
+                late June to mid August...<a href="https://weatherspark.com/y/2756/Average-Weather-in-Preston-Idaho-United-States-Year-Round" target="blank">ccontinue to full article</a>
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+
+            Takoradi<br>
+            Ghana, Western<br>
+            (555)555-5555<br>
+            contact@lharmattan.org<br>
+        </aside>
+        <p class="footer-bar">&copy; 2018 All Rights Reserved | L'harmattan | <span id="currentdate"></span></p>
+    </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/weathermap.js"></script>
+</body>
+
+</html>
