@@ -64,21 +64,24 @@
     <!-- CONTENT HERE -->
     <main class="clearfix">
 
-        <div class="sideByside">
-            <h2>Preston</h2>
-            <img src="images/preston-image.jpeg" alt="preston" sizes="40vw" srcset="images/preston-small.jpeg 200w">
-            <section class="weather">
-                <h3>Weather Summary</h3>
-                <div class="weatherdetails">
-                    <p class="label">Currently: Sunny</p>
-                    <p>Temperature: <span id="currentTemp">00</span>&deg;</p>
-                    <p>Humidity: <span id="currentHum">00</span></p>
-                    <p class="label">Precipitation: 0 inches</p>
-                    <p>Wind Speed: <span id="currentWind">00</span></p>
-                    <img src="images/weather.png" alt="current weather" id="weather_icon">
-                </div>
+        <div class="">
+            <img src="images/preston-image.jpeg" alt="" class="hero">
+            <section class="weathersummary">
+              <h3>Weather Summary</h3>
+              <div class="weatherdetails">
+                <p class="label">Currently:</p>
+                <p class="value">Sunny</p>
+                <p class="label">Temperature:</p>
+                <p class="value">76 &deg;F</p>
+                <p class="label">Humidity:</p>
+                <p class="value">69%</p>
+                <p class="label">Precipitation:</p>
+                <p class="value">0 inches</p>
+                <p class="label">Wind Speed:</p>
+                <p class="value">5 mph</p>
+              </div>
             </section>
-        </div>
+          </div>
 
         <section class="forecast">
             <h3>High Temperature Forecast for <span id="place">city</span></h3>
@@ -131,8 +134,7 @@
         </aside>
         <p class="footer-bar">&copy; 2018 All Rights Reserved | L'harmattan | <span id="currentdate"></span></p>
     </footer>
-    <script src="js/hamburger.js"></script>
-    <script src="js/weathermap.js"></script>
+   
 </body>
 
 </html>
