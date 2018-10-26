@@ -13,21 +13,7 @@
         width: 100px;
         height: auto;
     }
-   
-    .sideByside img {
-        position: relative; 
-        width: 99%;     
-        height: 600px;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-    .sideByside section {
-        position: relative;
-        top: -470px;
-    }
-    
-    
+       
     .forecast h3 {
         text-align: center;
         width: 100%;

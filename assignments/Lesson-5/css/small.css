@@ -6,7 +6,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body{
     font-family: 'K2D', sans-serif;
 font-family: 'Mali', cursive;
-font-size: 18px;
+font-size: .95rem;
 vertical-align: middle;
 }
 header {
@@ -55,6 +55,7 @@ nav button {
 nav {
     background-color: #000;
     font-family: 'Mali', cursive;
+     
 }
 nav ul {
     list-style-type: none;
@@ -74,9 +75,8 @@ nav ul li.active a {background: rgba(0, 0, 0, .2); color: #fff;}
 nav ul li a:hover {background: rgba(0, 0, 0, .4); color: #143E7F;}
 
 nav ul.hide {display: none;}
-img.hero {
-width: 100%;
-}
+
+
 
 .weatherdetails value {
     float:right;
