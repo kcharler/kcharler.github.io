@@ -1,0 +1,77 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35em) {
+
+    
+    header > img {
+        width: 125px;
+        margin-left: 5px;
+        left: -30px;
+    }
+    .headertext {
+        position: relative;
+        left: -20px;
+    }
+    .currentconditions {
+        display: inline-block;
+        margin: 1rem 0 1rem .5rem;
+        padding: 1.2rem;
+        vertical-align: middle;
+        color: #fff;
+        background-color:#3A557F ;
+        border: 1pt solid #2063CC;
+        font-size: 1.1rem;
+        transform: rotate(-90deg);
+    }
+    .currentconditions img{
+        width: 70px;
+        height: auto;
+    }
+    .currentconditions p{
+        transform: rotate(90deg);
+        font-size: 15px;
+    }
+    
+    nav {
+        background: #243d38; /* Old browsers */
+        background: -moz-linear-gradient(top, #243d38 1%, #393d60 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #243d38 1%,#393d60 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #243d38 1%,#393d60 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#243d38', endColorstr='#393d60',GradientType=0 ); /* IE6-9 */
+    }    
+    main {
+        width: 80%;
+        margin: 0 0 .2rem 2%;     
+        position: relative;
+        left: 80px;    
+    }
+    .town section {
+        position: relative;
+        top: -230px;
+    }
+    .forecast {
+        display: inline-block;
+        text-align: center;
+        width: 99%;
+        align-self: stretch;
+        position: relative;
+        top: -230px
+    }
+    .forecast h3 {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        border: 1px solid #143E7F;
+        background-color: #2063CC;
+        color: white;
+        border-color: #143E7F;
+    }
+    .forecast table {
+        width: 100%;
+        background-color: #2B7Cff;
+        color: aqua;
+    }
+    .town-article {
+        position: relative;
+        top: -230px;
+    }
+} /*end medium */

@@ -6,37 +6,36 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body{
     font-family: 'K2D', sans-serif;
 font-family: 'Mali', cursive;
-font-size: .95rem;
+font-size: 18px;
 vertical-align: middle;
 }
 header {
     background-color: #2B7Cff;
     text-align: center;
-    padding: .25rem;
+    padding: .15rem;
     display: inline-block;
     width: 100%;
+    overflow: hidden;
 }
 header > img {
     display: inline-block;
-    width: 100px;
-    margin: 10px;
-    display: inline-block;    
+    width: 80px;     
     height: auto;
     vertical-align: middle;
     position: relative;
-    font-size: 15px;
+   
 }
 .headertext {
     display: inline-block;
     vertical-align: middle; 
 }
 .headertext h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin: 15px auto;
     color: #000;
 }
 .subheading {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #000;
     font-style: italic;  
     margin-bottom: 15px;
@@ -55,7 +54,6 @@ nav button {
 nav {
     background-color: #000;
     font-family: 'Mali', cursive;
-     
 }
 nav ul {
     list-style-type: none;
@@ -75,20 +73,67 @@ nav ul li.active a {background: rgba(0, 0, 0, .2); color: #fff;}
 nav ul li a:hover {background: rgba(0, 0, 0, .4); color: #143E7F;}
 
 nav ul.hide {display: none;}
- main {
-     flex: 1;
- }
- main h2 {
-     text-align: center;
- }
 
-
-.weatherdetails value {
-    float:right;
+main h2 {
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
+
+main figure {margin: 0 0 .2rem 2%; width: 96%;}
+main figure img {width: 100%}
+
+.weathersummary {
+    border: 1px solid;
+    width: 150px;
+    background-color: bisque;
+    display: inline-block;
+    position: relative; 
+    top: -160px;
+    margin: 2%;
+    left: 10px;
+}
+
+.weathersummary h3 {
+    font-size: 1rem;
+    margin: 0;  
+}
+section .weatherdetails {
+    font-size: .8rem;
+    margin: 2%;
+}
+section div .value {
+    display: block;      
+}
+
 .forecast {
     display: none;
 }
+
+footer {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: .7rem;
+    padding-top: 5px;
+    margin-top: auto;
+    flex-shrink: 0;        
+}
+.town-article {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+    position: relative;
+    top: -150px;
+}
+.town-article img {width: 100%}
+
+
+
+
+
+
 
 
 

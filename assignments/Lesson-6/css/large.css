@@ -1,0 +1,65 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64em) {
+    
+    
+    header > img {
+        display: inline-block;
+        width: 200px;
+        height: auto;
+        vertical-align: middle;
+        position: relative;
+        left: -50px;
+    }
+    .currentconditions img{
+        width: 100px;
+        height: auto;
+    }
+    nav button { display:none; }      /* hamburger button does not need to be shown */
+
+    nav ul.hide {display: block;}
+    
+    nav ul {margin-left: 2%;} 
+   
+    nav ul li {
+        float: left;        
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, .3);
+        padding: .6rem 1rem;
+    }   
+    .town img {
+        position: relative; 
+        width: 99%;     
+        height: 600px;
+        
+
+    }
+    .town section {
+        position: relative;
+        top: -530px;
+        left: 20px
+    }    
+    .town-article {
+        display: block;
+        border: 1px solid #333;
+        position: relative;
+        top: -220px;
+    }
+    .town-article img {
+        position: relative;
+        float: right;
+        width: 50%;
+        top: -50px;
+    }
+    
+} /*end large */
+
+
+
+
+
+        
+
+  

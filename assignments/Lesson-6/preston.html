@@ -23,7 +23,7 @@
     <link href="css/medium.css" rel="stylesheet">
     <!-- enhance-desktop -->
     <link href="css/large.css" rel="stylesheet">
-  
+
 
 
 
@@ -32,7 +32,9 @@
 <body>
     <!-- HEADER HERE -->
     <header>
-        <img src="images/weather.png" alt="The weather site logo">
+
+        <img src="images/weather.png" alt="logo">
+
         <div class="headertext">
             <h1>L'harmattan</h1>
             <div class="subheading">Leave getting wet or find a shelter</div>
@@ -48,9 +50,7 @@
     <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
-            <li>
-                <a href="#" onclick="">Menu</a>
-            </li>
+
             <li><a href="#">Home</a></li>
             <li class="active"><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -63,26 +63,32 @@
 
     <!-- CONTENT HERE -->
     <main class="clearfix">
-
-        <div class="">
-            <h2>Preston</h2>
-            <img src="images/preston-image.jpeg" alt="" class="hero">
+        <div class="town">
+            <h2>The town of Preston</h2>
+            <figure>
+                <img src="images/preston.jpeg" alt="" sizes="100vw" 
+                srcset="images/preston200.jpg 200w,
+                        images/preston500.jpg  500w,
+                        images/preston800.jpg  800w,
+                        images/preston1100.jpg 1100w">
+            </figure>
             <section class="weathersummary">
-              <h3>Weather Summary</h3>
-              <div class="weatherdetails">
-                <p class="label">Currently:</p>
-                <p class="value">Sunny</p>
-                <p class="label">Temperature:</p>
-                <p class="value">76 &deg;F</p>
-                <p class="label">Humidity:</p>
-                <p class="value">69%</p>
-                <p class="label">Precipitation:</p>
-                <p class="value">0 inches</p>
-                <p class="label">Wind Speed:</p>
-                <p class="value">5 mph</p>
-              </div>
+                <h3>Weather Summary</h3>
+                <div class="weatherdetails">
+                    <p class="label">Currently:</p>
+                    <p class="value">Sunny</p>
+                    <p class="label">Temperature:</p>
+                    <p class="value">76 &deg;F</p>
+                    <p class="label">Humidity:</p>
+                    <p class="value">69%</p>
+                    <p class="label">Precipitation:</p>
+                    <p class="value">0 inches</p>
+                    <p class="label">Wind Speed:</p>
+                    <p class="value">5 mph</p>
+                </div>
             </section>
-          </div>
+        </div>
+
 
         <section class="forecast">
             <h3>High Temperature Forecast for <span id="place">city</span></h3>
@@ -111,15 +117,23 @@
         </section>
 
         <article class="town-article">
-            <h3 class="article-head">Preston Breaks Record</h3>
-            <img src="images/preston.jpeg" alt="story image" sizes="50vw" srcset="images/town-small.jpeg 250w">
+            <h3 class="article-head">State legislators impressed with district</h3>
+            <h4>By Necia P. Seamons</h4>
+            <img src="images/article.png" alt="story image" sizes="50vw" 
+                srcset="images/article_small.png 200w,
+                        images/article_large.png 750w">
             <p>
-                In Preston, the summers are warm and mostly clear, the winters are freezing and partly cloudy, and it
-                is dry year round. Over the course of the year, the temperature typically varies from 15°F to 88°F and
-                is rarely below 1°F or above 94°F.
+                Preston School District’s commitment to kids and technology was what Rep. Mark Gibbs and Sen. Mark
+                Harris took from their visit to the Preston School District last week.
 
-                Based on the tourism score, the best time of year to visit Preston for warm-weather activities is from
-                late June to mid August...<a href="https://weatherspark.com/y/2756/Average-Weather-in-Preston-Idaho-United-States-Year-Round" target="blank">ccontinue to full article</a>
+                “I’m floored with the technology that’s being incorporated into the classrooms, and how it is geared
+                towards the kids and they are learning,” said Harris.
+
+                Gibbs said he was impressed with the good condition of the district’s 79-year-old high school on one
+                hand, and that the district’s commitment to being prepared for growth is evident, as well. In other
+                words, the district has cared for the old building, but are not holding back on the opportunities for
+                the future, they noted....<a href="https://www.hjnews.com/preston/news/schools/state-legislators-impressed-with-district/article_05d4eaf4-d6f8-11e8-8da1-4bdd05c43163.html"
+                    target="blank">continue to full article</a>
             </p>
         </article>
 
@@ -130,12 +144,14 @@
 
             Takoradi<br>
             Ghana, Western<br>
-            (555)555-5555<br>
+            (+233)50-656-3254<br>
             contact@lharmattan.org<br>
         </aside>
-        <p class="footer-bar">&copy; 2018 All Rights Reserved | L'harmattan | <span id="currentdate"></span></p>
+        <p class="footer-bar">&copy; 2018 All Rights Reserved | L'harmattan |
+            <span id="currentdate"></span></p>
     </footer>
-   
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
 </body>
 
 </html>
