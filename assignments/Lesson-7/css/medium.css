@@ -2,9 +2,9 @@
 @media only screen and (min-width: 37.5em) {
         /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
    header{
-        display: flex;
-        align-content: center;
-        align-items: center;        
+        display: flex;        
+        align-items: center; 
+        justify-content: space-around;       
     }
     header > img {
         width: 105px;
@@ -13,16 +13,19 @@
        margin-left: 50px;
        left: 50px;
        position: relative;
-       left: -10px;
+       left: 50px;
     }
     .headertext {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
         position: relative;
-        left: -20px;
+        left: 130px;
 
     }
     .currentconditions {
         display: flex;
-        margin: 1rem 0 1rem 5rem;
+        margin: 1rem 0 1rem 15rem;
         padding: 1.2rem;
         vertical-align: middle;       
         color: #fff;
@@ -30,7 +33,7 @@
         border: 1pt solid #20B2AA;
         font-size: .9rem;
         position: relative;
-        right: 20px;
+        right: 50px;
         
     }
     .currentconditions img{
