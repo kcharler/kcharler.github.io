@@ -179,12 +179,6 @@ footer {
     background-color: #00183f;
 }
 
-#strm-cntr .strm-svr {
-    display: flex;
-    vertical-align: middle;
-    align-content: center;
-    align-items: center;
-    margin-top: 1em;
 }
 #strm-cntr .strm-svr span {
     margin: 5px;
@@ -205,9 +199,7 @@ footer {
     height: 35px;
     background-color: #fc9928;
 }
-
-#strm-cntr form textarea {
-    width: 100% ;   
+    
 }
 
 /* Thanks Page Specifics*/
