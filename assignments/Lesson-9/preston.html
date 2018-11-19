@@ -51,7 +51,7 @@
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
 
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li class="active"><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
@@ -75,18 +75,12 @@
             <section class="weathersummary">
                 <h3>Weather Summary</h3>
                 <div class="weatherdetails">
-                    <p class="label">Currently: Sunny</p>
-                    
-                    <p class="label" >Temperature:</p>
-                    <p class="value"id="temp">76 &deg;F</p>
-                    <p class="label">Humidity:</p>
-                    <p class="value">69%</p>
-                    <p class="label">Precipitation:</p>
-                    <p class="value">0 inches</p>
-                    <p class="label">Wind Speed:</p>
-                    <p class="value" id="speed">5</p>
-                    <p class="label">Wind Chill :</p>
-                    <p class="value" id="windchill"></p>
+                    <p>Currently: <span></span> Sunny</p>                    
+                    <p>Temperature: <span id="temp">00></span>&deg;F</p>                
+                    <p>Humidity: <span id="humidity">00</span>%</p>                  
+                    <p>Precipitation: <span>0</span>inches</p>                    
+                    <p>Wind Speed: <span id="wind">00</span>mph</p>                   
+                    <p>Wind Chill : <span id="windchill">00</span></p>            
                 </div>
             </section>
         </div>
@@ -155,6 +149,7 @@
     <script src="js/currentdate.js"></script>
     <script src="js/hamburger.js"></script>
     <script src="js/windchill.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 
 </html>

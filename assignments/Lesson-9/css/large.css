@@ -60,7 +60,7 @@
         display: block;
         border: 1px solid #333;
         position: relative;
-        top: -220px;
+        top: -200px;
     }
     .town-article img {
         position: relative;
@@ -89,6 +89,12 @@
     #strm-cntr form textarea {
         width: 30%;   
     } 
+    /*Home Page*/
+    
+    .townsinfo {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+     
     
 } /*end large */
 

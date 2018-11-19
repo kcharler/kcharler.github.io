@@ -73,7 +73,7 @@
         width: 99%;
         align-self: stretch;
         position: relative;
-        top: -230px
+        top: -210px
     }
     .forecast h3 {
         text-align: center;
@@ -104,7 +104,39 @@
       /*storm center*/
     
     form legend {
-    font-size: 1.5em;
+     font-size: 1.5em;
     }
+    /*-----HOMEPAGE------*/
+
+   .homepage {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+   .homepage p {      
+         
+        padding: 0.3em;
+    
+    }
+    
+    .townsinfo h2 {       
+        
+        color: #000000;
+        margin: 1em;
+        text-align: center;
+    }
+    .townsinfo h3 {       
+        color: #000000;
+        margin: 0.7em;
+         text-align: center;
+    }
+    .townsinfo p {            
+        margin: 0.2em;
+    }
+    .townsinfo ul {           
+        line-height: 1.9em;
+
+    }
+
+
 
 } /*end medium */
