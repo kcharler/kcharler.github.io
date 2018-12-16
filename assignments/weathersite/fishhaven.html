@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Preston Weather Page">
+    <meta name="author" content="Romeo Koui">
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>Main Page | L'harmattan</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=K2D%7cMali" rel="stylesheet">
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header>
+
+        <img src="images/weather.png" alt="logo">
+
+        <div class="headertext">
+            <h1>L'harmattan</h1>
+            <div class="subheading">Leave getting wet or find a shelter</div>
+        </div>
+        <div class="currentconditions">
+            <img src="images/sunny.png" alt="Current Weather Conditions icon">
+            <p>Sunny</p>
+        </div>
+    </header>
+
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li class="active"><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- CONTENT HERE -->
+    <main class="clearfix">
+<div class="homepage">
+    <h1>Springfield City</h1>
+    <p>The city of eternal spring</p>
+    </div>
+         
+    <figure class="mainphoto">
+            <img src= "Images/springfieldclouds200.jpg" alt="Breatiful Springfield" sizes="50vw" 
+                srcset= "Images/springfieldclouds200.jpg 200w,
+                 Images/springfieldclouds500.jpg 500w,
+                 Images/springfieldclouds800.jpg 800w,
+                 Images/springfieldclouds1100.jpg 1100w">
+            <figcaption>Springfield</figcaption>
+        </figure>
+
+  <br>
+       <br>
+    <section class="summary">
+        <h3>Weather Summary for <span id="city"> City </span></h3>   
+        <br>
+    <div class="current">
+        <p>Current Temperature : <span id="current"> 50 </span>&deg;F</p>
+        <p>Condition: <span id="description"> clear </span></p>
+        <p><img src="Images/icon.png" alt="current weather" id="weatherimage" width="100" height="100"></p>
+    </div>
+        
+    <div class="highlow">
+        <p>High: <span id="hightemp"> 100 </span>&deg;F</p>
+        <p>Low: <span id="lowtemp"> 10 </span>&deg;F</p>
+    </div>
+        <br>
+    <div class="conditions">
+    <p>Wind Speed: <span id="windspeed"> 5</span> mph</p>
+    </div>  
+  </section>
+  
+        <br>
+  
+<section class="forecast">
+  <h3>Ten Day Forecast</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Day 1</th>
+        <th>Day 2</th>
+        <th>Day 3</th>
+        <th>Day 4</th>
+        <th>Day 5</th>
+        <th>Day 6</th>
+        <th>Day 7</th>
+        <th>Day 8</th>
+        <th>Day 9</th>
+        <th>Day 10</th>
+      </tr>
+</thead>
+    <tbody>  
+      <tr>
+        <td>89&deg;F</td>
+        <td>87&deg;F</td>
+        <td>78&deg;F</td>
+        <td>75&deg;F</td>
+        <td>72&deg;F</td>
+        <td>72&deg;F</td>
+        <td>79&deg;F</td>
+        <td>83&deg;F</td>
+        <td>85&deg;F</td>
+        <td>89&deg;F</td>
+      </tr>
+</tbody>
+  </table>
+</section>
+<br>
+<section  class="mainarticle">
+<article class="articlesummer">
+    <h2>We are going to celebrate</h2>
+    <figure class="articlephoto">
+  <img src= "Images/anniversary200.jpg" alt="party this summer" sizes="25vw" 
+        srcset= "Images/anniversary200.jpg 200w,
+                 Images/anniversary500.jpg 500w,
+                 Images/anniversary800.jpg 800w,
+                 Images/anniversary1100.jpg 1100w">
+
+    </figure>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi euismod, varius turpis sed, bibendum arcu. Aliquam et placerat lectus. Aliquam quis nulla ipsum. In finibus semper bibendum. Curabitur vitae magna at tortor ornare imperdiet ac molestie dui. Fusce suscipit quam a quam consequat, et rutrum nunc scelerisque. Donec porta fermentum tortor eget sagittis. Nullam eget aliquam justo. Phasellus porta dapibus metus, ultrices accumsan velit porta et. Fusce id ultricies ligula. Cras erat enim, faucibus sit amet nibh in, luctus dapibus massa. Vivamus vulputate varius arcu, a iaculis metus semper sit amet. Donec feugiat mi in orci dignissim iaculis. Nunc tincidunt non nisl nec porta. Aenean ultricies turpis odio, a gravida lacus aliquet vitae.</p>
+</article>	
+</section>
+
+</main>
+
+<!-- FOOTER-->
+
+<footer includefile="footer.html">
+</footer>
+
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/currentdate.js"></script>
+<script src="scripts/springfieldweather.js"></script>
+<script src="scripts/mainmenu.js"></script>
+<script src="scripts/include.js"></script>
+
+</body>
+</html>

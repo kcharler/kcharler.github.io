@@ -1,0 +1,63 @@
+/* || general styles */
+
+html {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+body {
+  width: 800px;
+  margin: 0 auto;
+  
+  
+}
+
+h1, h2 {
+  font-family: 'Faster One', cursive;
+}
+
+/* header styles */
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  border: 5px solid #96ff66;
+  border-radius: 3rem;
+  padding: 0.7em;
+  background-color: orangered;
+}
+
+header p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  border: 3px solid #66ff73;
+  border-radius: 3rem;
+  background-color: orangered
+}
+
+/* section styles */
+
+section article {
+  text-align: center;
+  width: 33%;
+  float: left;  
+  border: 1px solid #96ff66;
+  border-radius: 1.5rem;
+ background-color: orangered;
+}
+
+section p {
+  margin: 5px 0;  
+  text-align: left;
+}
+
+section ul {
+  margin-top: 0;
+  text-align: left;
+}  
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -5px;
+  margin-bottom: 10px;
+}

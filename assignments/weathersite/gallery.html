@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Preston Weather Page">
+    <meta name="author" content="Romeo Koui">
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>Main Page | L'harmattan</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=K2D%7cMali" rel="stylesheet">
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header>
+
+        <img src="images/weather.png" alt="logo">
+
+        <div class="headertext">
+            <h1>L'harmattan</h1>
+            <div class="subheading">Leave getting wet or find a shelter</div>
+        </div>
+        <div class="currentconditions">
+            <img src="images/sunny.png" alt="Current Weather Conditions icon">
+            <p>Sunny</p>
+        </div>
+    </header>
+
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <main id="gallery">
+        <figure>
+            <img src="images/house-on-the-hill-large.jpg" alt="House on a hill" sizes="100vw" srcset="images/house-on-the-hill-small.jpg 300w,
+             images/house-on-the-hill-medium.jpg 600w,
+             images/house-on-the-hill-large.jpg 1100w">
+            <figcaption>
+                <strong>House on a Hill</strong><br> original by<a href="https://unsplash.com/photos/v2lJbPVMqr8">
+                    Peter Hammer </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/flower-road-large.jpg" alt="Flowering path" sizes="100vw" srcset="images/flower-road-small.jpg 300w,
+             images/flower-road-medium.jpg 600w,
+             images/flower-road-large.jpg 1100w">
+            <figcaption>
+                <strong>Walk on The Flower Road</strong><br> original by<a href="https://unsplash.com/photos/SwwoxDZrW5I">
+                    Aaron Brunhofer </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/distant-mountains-large.jpg" alt="Distant moutains" sizes="100vw" srcset="images/distant-mountains-small.jpg 300w,
+             images/distant-mountains-medium.jpg 600w,
+             images/distant-mountains-large.jpg 1100w">
+            <figcaption>
+                <strong>Mountains in The Distance</strong><br> original by<a href="https://unsplash.com/photos/F1oeYBKJsdw">
+                    Keghan Crossland </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/the-winter-is-coming-large.jpg" alt=" Winter wonderland" sizes="100vw" srcset="images/the-winter-is-coming-small.jpg 300w,
+             images/the-winter-is-coming-medium.jpg 600w,
+             images/the-winter-is-coming-large.jpg 1100w">
+            <figcaption>
+                <strong>In The Winter of Our Discontent</strong><br> original by<a href="https://unsplash.com/photos/QarnNZVf4SY">
+                    Ricardo Gomez Angel </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/view-of-the-city-large.jpg" alt="Distant city view" sizes="100vw" srcset="images/view-of-the-city-small.jpg 300w,
+             images/view-of-the-city-medium.jpg 600w,
+             images/view-of-the-city-large.jpg 1100w">
+            <figcaption>
+                <strong>A View of The City</strong><br> original by<a href="https://unsplash.com/photos/3ux6TnSApDs">
+                    Mathew Waters </a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="images/end-of-the-rainbow-large.jpg" alt="Coutry trail" sizes="100vw" srcset="images/end-of-the-rainbow-small.jpg 300w,
+             images/end-of-the-rainbow-medium.jpg 600w,
+             images/end-of-the-rainbow-large.jpg 1100w">
+            <figcaption>
+                <strong>Take a Stroll to Find The End of The Rainbow</strong><br> original by<a href="https://unsplash.com/photos/b9ehD6WFNSg">
+                    Asa Rodger </a>
+            </figcaption>
+        </figure>
+
+    </main>
+    <footer>
+        <aside>
+            Takoradi<br>
+            Ghana, Western<br>
+            (+233)50-656-3254<br>
+            contact@lharmattan.org<br>
+        </aside>
+        <p class="footer-bar">&copy; 2018 All Rights Reserved | L'harmattan |
+            <span id="currentdate"></span></p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+   
+</body>
+
+</html>
