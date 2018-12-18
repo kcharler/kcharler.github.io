@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Alcove Digital Systems</title>
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery-2.2.1.min.js"></script>
+	<link rel="stylesheet" href="styles/style.css">
+	<!--<script src="scripts/jquery-3.3.1.min.js"></script>-->
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
 	<script>
-	$(function(){
-		// jQuery Code goes here
+		$(function () {
+			// jQuery Code goes here 
 
-	})
+			var nameVal = $('input[name="nameVal"]');
+
+			function FillEmpty() {
+				if (nameVal.val() == '') {
+					nameVal.val('John Doe ');
+				}
+			}
+			$('#ReqAQuoteBtn').click(FillEmpty);
+		})
 	</script>
 </head>
+
 <body>
-<!-- Master Container Div -->
+	<!-- Master Container Div -->
 	<div class="container">
-	<!-- Header Div containing the Logo & Navigation Links -->
+		<!-- Header Div containing the Logo & Navigation Links -->
 		<div class="header">
 			<div class="logo" id="alcoveLogo"></div>
 			<div class="navbar">
@@ -35,7 +46,7 @@
 			<!-- Get a Free Quote Form -->
 			<div class="registerForm">
 				<form id="GetAQuoteForm">
-					<img class="ReqAQuoteImg" src="img/quote.png" alt="">
+					<img class="ReqAQuoteImg" src="Images/quote.png" alt="">
 					<br>
 					<div class="FormFieldHolder">
 						<div class="labelHolder"><label>Full Name</label></div>
@@ -64,7 +75,9 @@
 				<div class="boxes box1">
 					<h2>The Values that Drive Us</h2>
 					<hr>
-					<p>Alcove adopts various driving factors of corporate philosophy in our day to day activities that ultimately lead to success. We strive to achieve our value guidelines by incorporating our principles into each relationship with our clients to obtain long lasting customers. <br><br>Our core values : <br><br></p>
+					<p>Alcove adopts various driving factors of corporate philosophy in our day to day activities that ultimately lead
+						to success. We strive to achieve our value guidelines by incorporating our principles into each relationship with
+						our clients to obtain long lasting customers. <br><br>Our core values : <br><br></p>
 					<ul class="coreValues">
 						<li>Innovative Ideas</li>
 						<li>Ownership</li>
@@ -77,7 +90,8 @@
 				<div class="boxes box2">
 					<h2>What we do</h2>
 					<hr>
-					<p>Innovation is the key to success. Alcove's expertise covers a wide range of services, technologies, tools and platforms. Here are some of the things we're really good at :<br><br></p>
+					<p>Innovation is the key to success. Alcove's expertise covers a wide range of services, technologies, tools and
+						platforms. Here are some of the things we're really good at :<br><br></p>
 					<ul>
 						<li><a href="#" class="servicesBtn">Web Design & Development</a></li>
 						<li><a href="#" class="servicesBtn">Web Application Development</a></li>
@@ -89,9 +103,9 @@
 				<div class="boxes box3">
 					<h2>Our Work</h2>
 					<hr>
-					<a href="#" class="showcaseBtn"><img src="img/websites.jpg" alt=""></a>
-					<a href="#" class="showcaseBtn"><img src="img/mobileapps.jpg" alt=""></a>
-					<a href="#" class="showcaseBtn"><img src="img/webapps.jpg" alt=""></a>
+					<a href="#" class="showcaseBtn"><img src="Images/websites.jpg" alt=""></a>
+					<a href="#" class="showcaseBtn"><img src="Images/mobileapps.jpg" alt=""></a>
+					<a href="#" class="showcaseBtn"><img src="Images/webapps.jpg" alt=""></a>
 					<select name="showcaseOthers" id="showcaseOthers">
 						<option value="01">UI/UX Design</option>
 						<option value="02">Big Data Implementation</option>
@@ -103,8 +117,13 @@
 		</div>
 
 		<div class="footer">
-			<h5>© Alcove Digital Systems | <a href="#">Terms of Use</a></h5>
+			<h5>© Alcove Digital Systems | <a href="#">Terms of Use</a>
+				<div class="footer-right"> <a href="animatedMenu.html">Animated menu</a> <a href="DropDownMenu.html">Drop down menu</a>
+					<a href="fruitBasket.html">Fruit basket</a> <a href="InsertHTML.html">Insert
+						HTML</a> <a href="toggleButton.html">Toggle button</a></div>
+			</h5>
 		</div>
 	</div>
 </body>
+
 </html>
