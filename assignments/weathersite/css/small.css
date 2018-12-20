@@ -303,6 +303,139 @@ section>article {
     line-height: 1.9em;
 
 }
+/*--------Soda & Fish-------*/
+main {
+    padding: 25px;
+    background: #fff;
+    color: #606060;
+}
+
+main h2 {
+    color: #ff890b;
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: normal;
+}
+
+main h3 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+
+main figure img {
+    width: 100%;
+    height: auto;
+
+}
+
+#currentCond-f,
+#currentCond-s,
+#currentCond-g {
+    text-transform: capitalize;
+}
+
+.weather-summary img {
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+main figure {
+    margin: 0;
+    height: auto;
+
+}
+
+#bluesky {
+    box-shadow: 2px 2px 2px #606060;
+}
+
+main article {
+    padding-top: 40px;
+}
+
+
+
+.homepage1 h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: normal;
+    text-align: center;
+    color: #ff890b;
+    font-size: 40px;
+}
+
+#img-article-franklin {
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 2px #606060;
+}
+
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: normal;
+    text-align: center;
+    color: #ff890b;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.townboxes:hover {
+    box-shadow: 5px 5px 5px #606060; 
+}
+
+#topimg-index {
+    margin-top: -90px;
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 2px #606060;
+}
+
+
+.townboxes {
+    border: 3px solid #606060;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px #606060;
+    color: #606060;
+}
+
+
+.townboxes p {
+    font-weight: bold;
+}
+
+.rightcol ul li {
+    list-style: square;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.rightcol h3 {
+    margin-bottom: -7px;
+}
+
+.townboxes .box .leftcol img {
+    width: 100%;
+}
+
+
+.townboxes {
+    text-align: center;
+}
+
+
+span {
+    font-weight: normal;
+}
+
 
 
 

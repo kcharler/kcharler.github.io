@@ -136,6 +136,129 @@
         line-height: 1.9em;
 
     }
+     /*-------------- WEATHER SUMMARY AND IMG --------------*/
+     .weather-sum {
+        display: grid;
+        grid-template-columns: 10fr 1fr;
+        grid-gap: 30px;
+        justify-content: center;
+    }
+
+    .weather-summary {
+        font-size: 20px;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        display: block;
+    }
+
+    .weather-summary h3 {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .weather-summary img {
+        width: 100px;
+        margin-left: 100px;
+    }
+
+    /*-------------- TABLE --------------*/
+    .forecast {
+        padding-top: 0px;
+        text-align: center;
+    }
+
+    section.forecast {
+        display: grid;
+    }
+
+
+    th {
+        border-bottom: 1px solid #606060;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+     /*-------------- MAIN(Soda & Fish) --------------*/
+     main {
+        max-width: 880px;
+        margin: 0 auto;
+    }
+
+
+    main h2 {
+        padding: 20px;
+        font-size: 30px;
+        font-family: 'Luckiest Guy', cursive;
+        font-weight: normal;
+    }
+
+    main h3 {
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 25px;
+        font-weight: normal;
+    }
+
+    #img-article-franklin {
+        width: 350px;
+        height: auto;
+        float: right;
+        margin: 7px;
+    }
+
+    main article {
+        padding-top: 40px;
+
+    }
+    
+    #topimg-index {
+    margin-top: -40px;
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 2px #606060;
+}
+
+    #springfield {
+        display: flex;
+        flex-flow: row-reverse;
+    }
+
+    .townboxes {
+        padding: 0px;
+        margin: 40px 0px;
+    }
+    
+    .townboxes img {
+        margin-bottom: -10px;
+    }
+
+    .townboxes .box {
+        display: inline-flex;
+        background: #fff;
+        transition: all .3s ease-in-out;
+    }
+
+    .townboxes .box .leftcol {
+        flex: 100%;
+        min-height: 200px;
+    }
+
+    .townboxes .box .leftcol img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .townboxes .box .rightcol {
+        flex: 60%;
+        padding: 25px;
+        text-align: center;
+    }
+    
+    .rightcol ul li {
+    margin-right: 35px;
+}
 
 
 

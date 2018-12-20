@@ -54,7 +54,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Preston</a></li>
             <li class="active"><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
@@ -62,76 +62,132 @@
 
 
     <!-- CONTENT HERE -->
-    <main class="clearfix">
-        <div class="town">
-            <h2>The town of Soda Spring</h2>
+    <main>
+
+        <h2>Springfield</h2>
+
+        <div class="weather-sum">
             <figure>
-                <img src="images/soda springs 1.jpg" alt="" width="2" height="2">
-                
+                <img id="bluesky" src="images/sunrise.jpg" alt="Sunrise in the Forest">
             </figure>
-            <section class="weathersummary">
+            <section class="weather-summary">
                 <h3>Weather Summary</h3>
-                <div class="weatherdetails">
-                    <p>Currently: <span></span> Sunny</p>                    
-                    <p>Temperature: <span id="temp">00></span>&deg;F</p>                
-                    <p>Humidity: <span id="humidity">00</span>%</p>                  
-                    <p>Precipitation: <span>0</span>inches</p>                    
-                    <p>Wind Speed: <span id="wind">00</span>mph</p>                   
-                    <p>Wind Chill : <span id="windchill">00</span></p>            
+                <figure>
+                    <img src="#" id="weatherimage-s" alt="Image indicating weather">
+                </figure>
+                <div class="currentCond">
+                    <span id="currentCond-s"></span>
+                </div>
+                <div class="highlow">
+                    <p>Current Temp: <span id="currenttemp-s"></span> &deg; F</p>
+                </div>
+                <div class="conditions">
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Precipitation: <span id="clouds"></span>%</p>
+                    <p>Wind Speed: <span id="windspeed"></span> mph</p>
                 </div>
             </section>
         </div>
 
-
         <section class="forecast">
-            <h3>High Temperature Forecast for <span id="place">city</span></h3>
+            <h3>Ten Day Forecast</h3>
             <table>
                 <thead>
                     <tr>
-                        <th>Day</th>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
-                        <th>Sat</th>
-                        <th>Sun</th>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th>Forecast</th>
-                        <td>80&deg;F</td>
-                        <td>85&deg;F</td>
-                        <td>79&deg;F</td>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
                         <td>75&deg;F</td>
-                        <td>74&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <article class="town-article">
-            <h3 class="article-head">State legislators impressed with district</h3>
-            <h4>By Necia P. Seamons</h4>
-            <img src="images/article.png" alt="story image" sizes="50vw" 
-                srcset="images/article_small.png 200w,
-                        images/article_large.png 750w">
-            <p>
-                Preston School District’s commitment to kids and technology was what Rep. Mark Gibbs and Sen. Mark
-                Harris took from their visit to the Preston School District last week.
+        <article class="franklin-article">
+            <h3>Springfield Fair to Begin This Weekend</h3>
+            <img src="images/fair.jpg" alt="Ferris Wheel at Night" id="img-article-franklin">
+            <p class="town-article">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et erat tristique, sollicitudin dolor
+                et, aliquam mauris. Sed interdum volutpat scelerisque. Fusce sit amet enim ut enim cursus pulvinar nec
+                at massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                Mauris interdum lectus nec lectus vestibulum luctus. Duis malesuada, purus eu elementum finibus, purus
+                ligula ultrices nunc, a iaculis ligula ligula vel quam. Sed commodo, tortor sollicitudin commodo
+                tincidunt, mi nibh bibendum diam, nec tempor orci risus non tortor. Duis cursus vitae nibh ac mattis.
+                Sed at rhoncus felis. Nunc ac nulla vel nisl rutrum congue. Suspendisse posuere dui sed sodales
+                fringilla. Etiam pharetra, sapien ut lacinia varius, est leo aliquet eros, eget aliquet urna sapien
+                eget sapien. Cras viverra porttitor justo, a pharetra erat hendrerit vitae. Proin et enim ut odio
+                vehicula aliquam et id sem. Proin egestas suscipit felis sit amet vestibulum. Maecenas volutpat
+                imperdiet sollicitudin. Nulla feugiat mauris ac elit porttitor dapibus. Fusce nec enim neque. Class
+                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ac
+                facilisis lorem. Cras felis nisi, tincidunt id interdum ut, posuere bibendum magna. Nullam lacinia
+                fringilla eros, vitae luctus ligula. Nunc luctus nunc et posuere consequat. Suspendisse dictum non est
+                sed facilisis. Aenean rhoncus, metus sit amet elementum ultrices, arcu nisi vestibulum magna, ac
+                dignissim est orci a odio. Nulla quis quam odio. Sed eu ornare nulla. Praesent eget tincidunt sem, id
+                vulputate dui. Phasellus finibus erat quis lectus sollicitudin dignissim ut euismod ligula. Sed
+                sagittis vehicula iaculis. Duis augue justo, dignissim non augue in, auctor pulvinar nisi. Vivamus
+                aliquam interdum volutpat. Ut dignissim dolor consectetur lacus lacinia imperdiet. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque gravida tristique
+                purus. Curabitur eros dolor, ultricies a tempus ac, molestie ac est. Pellentesque iaculis lectus id mi
+                ullamcorper tincidunt. Proin vel orci ut dui pretium rutrum. Quisque elementum est vel est mattis
+                ornare. Nulla fermentum turpis nec quam feugiat fringilla vitae non dolor. Quisque et nisi consequat
+                erat placerat laoreet et ut eros. Phasellus sed sollicitudin justo. Aliquam tempus leo lacus, eget
+                vulputate lacus faucibus venenatis. Phasellus nec bibendum tortor. Mauris suscipit lacus fringilla quam
+                vestibulum, sit amet rhoncus est pellentesque. Orci varius natoque penatibus et magnis dis parturient
+                montes, nascetur ridiculus mus.
+            </p>
 
-                “I’m floored with the technology that’s being incorporated into the classrooms, and how it is geared
-                towards the kids and they are learning,” said Harris.
-
-                Gibbs said he was impressed with the good condition of the district’s 79-year-old high school on one
-                hand, and that the district’s commitment to being prepared for growth is evident, as well. In other
-                words, the district has cared for the old building, but are not holding back on the opportunities for
-                the future, they noted....<a href="https://www.hjnews.com/preston/news/schools/state-legislators-impressed-with-district/article_05d4eaf4-d6f8-11e8-8da1-4bdd05c43163.html"
-                    target="blank">continue to full article</a>
+            <p class="town-article">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et erat tristique, sollicitudin dolor
+                et, aliquam mauris. Sed interdum volutpat scelerisque. Fusce sit amet enim ut enim cursus pulvinar nec
+                at massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                Mauris interdum lectus nec lectus vestibulum luctus. Duis malesuada, purus eu elementum finibus, purus
+                ligula ultrices nunc, a iaculis ligula ligula vel quam. Sed commodo, tortor sollicitudin commodo
+                tincidunt, mi nibh bibendum diam, nec tempor orci risus non tortor. Duis cursus vitae nibh ac mattis.
+                Sed at rhoncus felis. Nunc ac nulla vel nisl rutrum congue. Suspendisse posuere dui sed sodales
+                fringilla. Etiam pharetra, sapien ut lacinia varius, est leo aliquet eros, eget aliquet urna sapien
+                eget sapien. Cras viverra porttitor justo, a pharetra erat hendrerit vitae. Proin et enim ut odio
+                vehicula aliquam et id sem. Proin egestas suscipit felis sit amet vestibulum. Maecenas volutpat
+                imperdiet sollicitudin. Nulla feugiat mauris ac elit porttitor dapibus. Fusce nec enim neque. Class
+                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ac
+                facilisis lorem. Cras felis nisi, tincidunt id interdum ut, posuere bibendum magna. Nullam lacinia
+                fringilla eros, vitae luctus ligula. Nunc luctus nunc et posuere consequat. Suspendisse dictum non est
+                sed facilisis. Aenean rhoncus, metus sit amet elementum ultrices, arcu nisi vestibulum magna, ac
+                dignissim est orci a odio. Nulla quis quam odio. Sed eu ornare nulla. Praesent eget tincidunt sem, id
+                vulputate dui. Phasellus finibus erat quis lectus sollicitudin dignissim ut euismod ligula. Sed
+                sagittis vehicula iaculis. Duis augue justo, dignissim non augue in, auctor pulvinar nisi. Vivamus
+                aliquam interdum volutpat. Ut dignissim dolor consectetur lacus lacinia imperdiet. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque gravida tristique
+                purus. Curabitur eros dolor, ultricies a tempus ac, molestie ac est. Pellentesque iaculis lectus id mi
+                ullamcorper tincidunt. Proin vel orci ut dui pretium rutrum. Quisque elementum est vel est mattis
+                ornare. Nulla fermentum turpis nec quam feugiat fringilla vitae non dolor. Quisque et nisi consequat
+                erat placerat laoreet et ut eros. Phasellus sed sollicitudin justo. Aliquam tempus leo lacus, eget
+                vulputate lacus faucibus venenatis. Phasellus nec bibendum tortor. Mauris suscipit lacus fringilla quam
+                vestibulum, sit amet rhoncus est pellentesque. Orci varius natoque penatibus et magnis dis parturient
+                montes, nascetur ridiculus mus.
             </p>
         </article>
 
     </main>
-
     <footer>
         <aside>
 
@@ -145,7 +201,7 @@
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/hamburger.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="scripts/weather-springfield.js"></script>
     <script src="js/weather.js"></script>
 </body>
 
