@@ -1,0 +1,59 @@
+{
+	"temples": [{
+
+			"temple1": [
+
+				"2018: Tuesday, December 25, 2018",
+				"2019: Tuesday, January 1, 2019",
+				"Saturday, April 6, 2019",
+				"Monday, April 15, 2019 - Monday, April 29, 2019",
+				"Thursday, July 4, 2019",
+				"Wednesday, July 24, 2019",
+				"Saturday, October 5, 2019",
+				"Monday, October 14, 2019 - Monday, October 28, 2019",
+				"Wednesday, November 27, 2019 - Thursday, November 28, 2019",
+				"Tuesday, December 24, 2019 - Wednesday, December 25, 2019",
+				"Tuesday, December 31, 2019"
+
+			],
+		
+		
+			"temple2": [
+
+				"2018: Tuesday, December 25, 2018 ",
+				"2019: Tuesday, January 1, 2019",
+				"Monday, January 7, 2019 - Monday, January 21, 2019",
+				"Saturday, April 6, 2019 (Limited Hours)",
+				"Monday, June 3, 2019 - Monday, June 17, 2019",
+				"Saturday, October 5, 2019 (Limited Hours)",
+				"Tuesday, December 24, 2019",
+				"Wednesday, December 25, 2019",
+				"Tuesday, December 31, 2019"
+			],
+
+		
+		
+			"temple3": [
+
+				"2018:  Tuesday, December 25, 2018",
+				"2019: Tuesday, January 1, 2019 ",
+				"Monday, January 14, 2019 - Tuesday, January 29, 2019",
+				"Tuesday, June 18, 2019 - Saturday, June 29, 2019"
+			],
+		
+		
+			"temple4": [
+
+				"2018: Tuesday, December 25, 2018",
+				"Wednesday, December 26, 2018",
+				"Monday, December 31, 2018 - Monday, January 14, 2019",
+				"2019 :Saturday, April 6, 2019",
+				"Monday, July 22, 2019 - Monday, August 5, 2019",
+				"Saturday, October 5, 2019",
+				"Tuesday, December 24, 2019 - Thursday, December 26, 2019",
+				"Monday, December 30, 2019 - Monday, January 13, 2020"
+			]
+		}
+	]
+
+}

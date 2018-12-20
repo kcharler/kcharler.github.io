@@ -1,0 +1,102 @@
+@media only screen and (min-width: 64em) {
+
+
+    /*-------------- HEADER --------------*/
+    
+
+    header h3 {
+        margin-top: -10px;
+    }
+
+    nav li {width: 140px;}
+     
+    /*-------------- MAIN/BODY --------------*/
+    body {
+        font-size: 1.05rem;
+        background: #fff;
+        max-width: 90%;
+        margin: 50px auto;
+        
+    }
+
+    #topimg {
+        width: 100%;
+    }
+
+    #topimg-index {
+        /*margin-top: -40px;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    #currentdate {
+        color: #000;
+    }
+
+    .allboxes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .boxes {
+        display: block;
+
+    }
+
+    .boxes p {
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+
+    .boxes h1 {
+        margin-top: 0px;
+    }
+
+    .boxes img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .boxes .box .rightcol {
+        padding: 0px;
+
+    }
+
+    .boxes .box {
+        display: block;
+    }
+    
+    .odd img,
+    .even  img{          
+        float: right;
+        width: 48%;
+        margin-left: 2%;
+    }
+
+    /*-------------- CONTACT --------------*/
+    .contactus {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .map {
+        padding-left: 20px;
+        max-width: 350px;
+    }
+
+
+    /*-------------- FORM --------------*/
+    form label.sbs {
+        padding: .4rem 0;
+    }
+
+    .thanks h1 {
+        color: #497a55;
+        font-size: 120px;
+        margin: 0px;
+    }
+
+}
