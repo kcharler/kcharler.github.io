@@ -67,7 +67,7 @@
         position: relative;
         top: -230px;
     }
-    .forecast {
+/*.forecast {
         display: inline-block;
         text-align: center;
         width: 99%;
@@ -88,12 +88,8 @@
         width: 100%;
         background-color: #2B7Cff;
         color: aqua;
-    }
-    .town-article {
-        position: relative;
-        top: -230px;
-    }
-
+    }*/
+    
     #gallery {
         grid-template-columns: repeat(2, 1fr);
     }

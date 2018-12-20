@@ -94,6 +94,49 @@
     .townsinfo {
         grid-template-columns: 1fr 1fr 1fr;
     }
+    /*-------------- MAIN/BODY --------------*/
+   
+    #topimg-index {
+        margin-top: -40px;
+        width: 100%;
+        height: auto;
+    }
+    
+        #currentdate {
+            color: #ffffff;
+        }
+        
+        #springfield {
+            display: flex;
+            flex-flow: column;
+        }
+        
+        .alltownboxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .townboxes {
+            display: block;
+            
+        }
+        
+        .townboxes img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        
+        .townboxes .box .rightcol {
+            padding: 0px;
+    
+        }
+        
+        .townboxes .box{
+            display: block;
+        }
      
     
 } /*end large */
