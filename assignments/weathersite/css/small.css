@@ -92,21 +92,7 @@ main h2 {
 main figure {margin: 0 0 .2rem 2%; width: 96%;}
 main figure img {width: 100%}
 
-.weathersummary {
-    border: 1px solid;
-    width: 150px;
-    background-color: bisque;
-    display: inline-block;
-    position: relative; 
-    top: -160px;
-    margin: 2%;
-    left: 10px;
-}
 
-.weathersummary h3 {
-    font-size: 1rem;
-    margin: 0;  
-}
 div p{
     text-align: center;
 }
@@ -350,9 +336,6 @@ main figure {
 main article {
     padding-top: 40px;
 }
-
-
-
 .homepage1 h1 {
     font-family: 'Luckiest Guy', cursive;
     font-weight: normal;

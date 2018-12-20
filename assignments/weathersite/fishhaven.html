@@ -62,105 +62,82 @@
 
 
     <!-- CONTENT HERE -->
-    <main class="clearfix">
-<div class="homepage">
-    <h1>Springfield City</h1>
-    <p>The city of eternal spring</p>
-    </div>
-         
-    <figure class="mainphoto">
-            <img src= "Images/springfieldclouds200.jpg" alt="Breatiful Springfield" sizes="50vw" 
-                srcset= "Images/springfieldclouds200.jpg 200w,
-                 Images/springfieldclouds500.jpg 500w,
-                 Images/springfieldclouds800.jpg 800w,
-                 Images/springfieldclouds1100.jpg 1100w">
-            <figcaption>Springfield</figcaption>
-        </figure>
+    <main>
 
-  <br>
-       <br>
-    <section class="summary">
-        <h3>Weather Summary for <span id="city"> City </span></h3>   
-        <br>
-    <div class="current">
-        <p>Current Temperature : <span id="current"> 50 </span>&deg;F</p>
-        <p>Condition: <span id="description"> clear </span></p>
-        <p><img src="Images/icon.png" alt="current weather" id="weatherimage" width="100" height="100"></p>
-    </div>
-        
-    <div class="highlow">
-        <p>High: <span id="hightemp"> 100 </span>&deg;F</p>
-        <p>Low: <span id="lowtemp"> 10 </span>&deg;F</p>
-    </div>
-        <br>
-    <div class="conditions">
-    <p>Wind Speed: <span id="windspeed"> 5</span> mph</p>
-    </div>  
-  </section>
-  
-        <br>
-  
-<section class="forecast">
-  <h3>Ten Day Forecast</h3>
-  <table>
-    <thead>
-      <tr>
-        <th>Day 1</th>
-        <th>Day 2</th>
-        <th>Day 3</th>
-        <th>Day 4</th>
-        <th>Day 5</th>
-        <th>Day 6</th>
-        <th>Day 7</th>
-        <th>Day 8</th>
-        <th>Day 9</th>
-        <th>Day 10</th>
-      </tr>
-</thead>
-    <tbody>  
-      <tr>
-        <td>89&deg;F</td>
-        <td>87&deg;F</td>
-        <td>78&deg;F</td>
-        <td>75&deg;F</td>
-        <td>72&deg;F</td>
-        <td>72&deg;F</td>
-        <td>79&deg;F</td>
-        <td>83&deg;F</td>
-        <td>85&deg;F</td>
-        <td>89&deg;F</td>
-      </tr>
-</tbody>
-  </table>
-</section>
-<br>
-<section  class="mainarticle">
-<article class="articlesummer">
-    <h2>We are going to celebrate</h2>
-    <figure class="articlephoto">
-  <img src= "Images/anniversary200.jpg" alt="party this summer" sizes="25vw" 
-        srcset= "Images/anniversary200.jpg 200w,
-                 Images/anniversary500.jpg 500w,
-                 Images/anniversary800.jpg 800w,
-                 Images/anniversary1100.jpg 1100w">
-
-    </figure>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu nisi euismod, varius turpis sed, bibendum arcu. Aliquam et placerat lectus. Aliquam quis nulla ipsum. In finibus semper bibendum. Curabitur vitae magna at tortor ornare imperdiet ac molestie dui. Fusce suscipit quam a quam consequat, et rutrum nunc scelerisque. Donec porta fermentum tortor eget sagittis. Nullam eget aliquam justo. Phasellus porta dapibus metus, ultrices accumsan velit porta et. Fusce id ultricies ligula. Cras erat enim, faucibus sit amet nibh in, luctus dapibus massa. Vivamus vulputate varius arcu, a iaculis metus semper sit amet. Donec feugiat mi in orci dignissim iaculis. Nunc tincidunt non nisl nec porta. Aenean ultricies turpis odio, a gravida lacus aliquet vitae.</p>
-</article>	
-</section>
-
-</main>
+            <h2>Fish Haven</h2>
+    
+            <div class="weather-sum">
+                <figure>
+                    <img id="bluesky" src="images/autumn.jpg" alt="An autumn day in Greenville">
+                </figure>
+                <section class="weather-summary">
+                    <h3>Weather Summary</h3>
+                    <figure>
+                            <img src="#" id="weatherimage-g" alt="Image indicating weather">
+                        </figure>
+                    <div class="currentCond">
+                        <span id="currentCond-g"></span>
+                    </div>
+                    <div class="highlow">
+                        <p>Current Temp: <span id="currenttemp-g"></span> &deg; F</p>
+                    </div>
+                    <div class="conditions">
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>Precipitation: <span id="clouds"></span>%</p>
+                        <p>Wind Speed: <span id="windspeed"></span> mph</p>
+                    </div>
+                </section>
+            </div>
+    
+            <section class="forecast">
+                <h3>High Temperature Forcast for City</h3>
+                <table>
+                    <thead>
+                        <tr>
+                                <th>Day</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                                <th>Sun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                                <th>Forecast</th>
+                                <td>89&deg;F</td>
+                                <td>87&deg;F</td>
+                                <td>78&deg;F</td>
+                                <td>75&deg;F</td>
+                                <td>72&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+    
+            <article class="franklin-article">
+                <h3>Fish Haven Storms Report</h3>
+                <img src="images/lightning-greenville.jpg" alt="Lightning in Greenville" id="img-article-franklin">
+                <p class="town-article">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et erat tristique, sollicitudin dolor et, aliquam mauris. Sed interdum volutpat scelerisque. Fusce sit amet enim ut enim cursus pulvinar nec at massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris interdum lectus nec lectus vestibulum luctus. Duis malesuada, purus eu elementum finibus, purus ligula ultrices nunc, a iaculis ligula ligula vel quam. Sed commodo, tortor sollicitudin commodo tincidunt, mi nibh bibendum diam, nec tempor orci risus non tortor. Duis cursus vitae nibh ac mattis. Sed at rhoncus felis. Nunc ac nulla vel nisl rutrum congue. Suspendisse posuere dui sed sodales fringilla. Etiam pharetra, sapien ut lacinia varius, est leo aliquet eros, eget aliquet urna sapien eget sapien. Cras viverra porttitor justo, a pharetra erat hendrerit vitae. Proin et enim ut odio vehicula aliquam et id sem. Proin egestas suscipit felis sit amet vestibulum. Maecenas volutpat imperdiet sollicitudin. Nulla feugiat mauris ac elit porttitor dapibus. Fusce nec enim neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ac facilisis lorem. Cras felis nisi, tincidunt id interdum ut, posuere bibendum magna. Nullam lacinia fringilla eros, vitae luctus ligula. Nunc luctus nunc et posuere consequat. Suspendisse dictum non est sed facilisis. Aenean rhoncus, metus sit amet elementum ultrices, arcu nisi vestibulum magna, ac dignissim est orci a odio. Nulla quis quam odio. Sed eu ornare nulla. Praesent eget tincidunt sem, id vulputate dui. Phasellus finibus erat quis lectus sollicitudin dignissim ut euismod ligula. Sed sagittis vehicula iaculis. Duis augue justo, dignissim non augue in, auctor pulvinar nisi. Vivamus aliquam interdum volutpat. Ut dignissim dolor consectetur lacus lacinia imperdiet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque gravida tristique purus. Curabitur eros dolor, ultricies a tempus ac, molestie ac est. Pellentesque iaculis lectus id mi ullamcorper tincidunt. Proin vel orci ut dui pretium rutrum. Quisque elementum est vel est mattis ornare. Nulla fermentum turpis nec quam feugiat fringilla vitae non dolor. Quisque et nisi consequat erat placerat laoreet et ut eros. Phasellus sed sollicitudin justo. Aliquam tempus leo lacus, eget vulputate lacus faucibus venenatis. Phasellus nec bibendum tortor. Mauris suscipit lacus fringilla quam vestibulum, sit amet rhoncus est pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                </p>
+                
+               
+            </article>
+    
+        </main>
+    
 
 <!-- FOOTER-->
 
 <footer includefile="footer.html">
 </footer>
 
-<script src="scripts/hamburger.js"></script>
-<script src="scripts/currentdate.js"></script>
-<script src="scripts/springfieldweather.js"></script>
-<script src="scripts/mainmenu.js"></script>
-<script src="scripts/include.js"></script>
+<script src="js/hamburger.js"></script>
+<script src="js/currentdate.js"></script>
+<script src="js/weather-fish.js"></script>
+
+
 
 </body>
 </html>

@@ -67,13 +67,14 @@
         position: relative;
         top: -230px;
     }
-/*.forecast {
+.forecast {
         display: inline-block;
         text-align: center;
-        width: 99%;
+        width: 70%;
         align-self: stretch;
         position: relative;
-        top: -210px
+        top: 20px;
+       
     }
     .forecast h3 {
         text-align: center;
@@ -158,28 +159,11 @@
         margin-left: 100px;
     }
 
-    /*-------------- TABLE --------------*/
-    .forecast {
-        padding-top: 0px;
-        text-align: center;
-    }
 
-    section.forecast {
-        display: grid;
-    }
-
-
-    th {
-        border-bottom: 1px solid #606060;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-
-     /*-------------- MAIN(Soda & Fish) --------------*/
+     /*-------------- MAIN --------------*/
      main {
-        max-width: 880px;
-        margin: 0 auto;
+        max-width: 80%;
+        margin: 0;
     }
 
 
