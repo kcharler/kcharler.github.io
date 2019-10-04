@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+//colors
+$header-background-color: #6495ED;
+$article-background-color: white;
+$main-background-color: #FAEBD7;
+$active-color: #DEB887;
+@media only screen and (max-width: 650px) {
+    /* For small screens: */
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+  header {
+      display: inline-block;
+      background-color: #6495ED;
+      text-align: right;
+      width: 100%;
+      
+  }  
+  hr {
+      width: 70%;
+      margin-right: 20px;
+  }
+  ul {
+      list-style-type: none;
+           
+  }
+ header a:link, header a:visited {
+      display: block;
+      text-decoration: none;
+      margin-right: 20px;
+      padding: 5px; 
+      color: #FAEBD7;
+      
+  }
+  li:hover {
+      background-color: white;
+      text-decoration: underline;
+  }
+ main {
+     display: flex;
+     flex-direction: column;
+     background-color: #FAEBD7;
+  }
+ article {
+      background-color: white;
+      text-align: left;
+      padding-left: 20px;
+      line-height: 1;
+      font-size: 14px;
+      border: 1px solid white;
+      margin: 30px 15px 15px 30px;
+      margin-right: 20px;
+      box-shadow: 4px 4px 5px 0px rgb(179, 173, 173,1);
+  }
+  .post-date {
+      margin-top: 20px;
+      text-align: left;
+  }
+  .post-content {
+      margin-top: -10px; 
+      padding-right: 20px;     
+  }
+  figure img {
+      width: 100%;
+      margin-top: 30px;
+  }
+   h2 a:link,  a:visited {
+      color: black;
+      text-decoration: none;
+      font-family: Lora;
+  } 
+  h2 a:hover {
+      color: #6495ED;
+      text-decoration: underline;
+  }
+  h2 a:active {
+      color: #DEB887;
+  }
+  p {
+      font-size: 12.5px;
+  }
+  p a:link, p a:visited {
+      color: #6495ED; 
+      text-decoration: none;
+  }
+  p a:hover {
+      text-decoration: underline;
+  }
+  p a:active {
+      color: #DEB887;
+  }
+} /* End Small CSS */
+
+
+
+  
+  @media only screen and (min-width: 651px) {
+    
+
+    body {
+       
+
+        font-family: Arial, Helvetica, sans-serif;
+        width: 70%;
+        margin: auto;
+      }
+    header {
+        background-color: #6495ED;
+        text-align: right;
+        position: fixed; 
+        z-index: 1000;
+        top: 0;
+        bottom: 0;
+        width: 200px;
+    } 
+    ul {
+        list-style-type: none;
+    }
+    header a:link, header a:visited {
+        display: block;
+        text-decoration: none;
+        margin-right: 20px;
+        padding: 5px; 
+        color: #FAEBD7;        
+    }
+    hr {
+        width: 80%;
+        margin-right: 20px;
+    }
+    li:hover {
+        background-color: white;
+        text-decoration: underline;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        background-color: #FAEBD7;
+        padding-left: 200px;
+        width: 60%;
+        margin: 0 0 0 15px;   
+     }
+     article { 
+        display: block;
+        background-color: white;
+        text-align: left;
+        line-height: 1;
+        font-size: 14px;
+        border: 1px solid white;
+        margin: 25px 30px 20px 30px;
+        box-shadow: 4px 4px 5px 0px rgb(179, 173, 173,1);
+        padding-left: 25px;
+        width: 80%;
+     }
+     figure img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 50%;
+        text-align: center;
+    }
+    .post-date {
+        margin-top: 25px;
+    }
+    .post-content {
+        margin-top: -10px;
+        padding-right: 35px;
+    }
+     h2 a:link,  a:visited { 
+        color: black;
+        text-decoration: none;
+        font-family: Lora;
+    } 
+    h2 a:hover {
+        color: #6495ED;
+        text-decoration: underline;
+    }
+    h2 a:active {
+        color: #DEB887;
+    }
+    p {
+        font-size: 12.5px;
+    }
+    p a:link, p a:visited {
+        color: #6495ED; 
+        text-decoration: none;
+    }
+    p a:hover {
+        text-decoration: underline;
+    }
+    p a:active {
+        color: #DEB887;
+    }
+ 
+
+} /*end large */
+
+  
