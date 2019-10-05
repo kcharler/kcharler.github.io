@@ -5,192 +5,169 @@ $header-background-color: #6495ED;
 $article-background-color: white;
 $main-background-color: #FAEBD7;
 $active-color: #DEB887;
-@media only screen and (max-width: 650px) {
-    /* For small screens: */
-    body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
+$color: black;
+
+//variables
+//set breakpoint sizes
+$break-small: 40em;
+$break-large: 40em;
+
+
+  //mixins
+
+@mixin breakpoint($break) {
+    @if $break == large  {
+        @media (min-width: $break-large) { @content; }
+    }
+    @else if $break == small {
+        @media (max-width: $break-small) { @content;}
+   }   
+}
+
+ body {
+     @include breakpoint(small) {
+         margin: 0;
+         font-family: Arial, Helvetica, sans-serif;}
+     @include breakpoint(large) {
+         font-family: Arial, Helvetica, sans-serif;
+         margin: auto;
+         max-width: 700px;}
+    }
       
   header {
-      display: inline-block;
-      background-color: #6495ED;
+     @include breakpoint(small) {display: inline-block;
+      background-color: $header-background-color;
       text-align: right;
-      width: 100%;
-      
-  }  
-  hr {
-      width: 70%;
-      margin-right: 20px;
-  }
-  ul {
-      list-style-type: none;
-           
-  }
- header a:link, header a:visited {
-      display: block;
-      text-decoration: none;
-      margin-right: 20px;
-      padding: 5px; 
-      color: #FAEBD7;
-      
-  }
-  li:hover {
-      background-color: white;
-      text-decoration: underline;
-  }
- main {
-     display: flex;
-     flex-direction: column;
-     background-color: #FAEBD7;
-  }
- article {
-      background-color: white;
-      text-align: left;
-      padding-left: 20px;
-      line-height: 1;
-      font-size: 14px;
-      border: 1px solid white;
-      margin: 30px 15px 15px 30px;
-      margin-right: 20px;
-      box-shadow: 4px 4px 5px 0px rgb(179, 173, 173,1);
-  }
-  .post-date {
-      margin-top: 20px;
-      text-align: left;
-  }
-  .post-content {
-      margin-top: -10px; 
-      padding-right: 20px;     
-  }
-  figure img {
-      width: 100%;
-      margin-top: 30px;
-  }
-   h2 a:link,  a:visited {
-      color: black;
-      text-decoration: none;
-      font-family: Lora;
-  } 
-  h2 a:hover {
-      color: #6495ED;
-      text-decoration: underline;
-  }
-  h2 a:active {
-      color: #DEB887;
-  }
-  p {
-      font-size: 12.5px;
-  }
-  p a:link, p a:visited {
-      color: #6495ED; 
-      text-decoration: none;
-  }
-  p a:hover {
-      text-decoration: underline;
-  }
-  p a:active {
-      color: #DEB887;
-  }
-} /* End Small CSS */
-
-
-
-  
-  @media only screen and (min-width: 651px) {
-    
-
-    body {
-       
-
-        font-family: Arial, Helvetica, sans-serif;
-        width: 70%;
-        margin: auto;
-      }
-    header {
-        background-color: #6495ED;
+      width: 100%;}
+     @include breakpoint(large) { 
+        background-color: $header-background-color;
         text-align: right;
         position: fixed; 
         z-index: 1000;
         top: 0;
         bottom: 0;
-        width: 200px;
-    } 
-    ul {
-        list-style-type: none;
+        width: 200px;}
     }
-    header a:link, header a:visited {
-        display: block;
-        text-decoration: none;
-        margin-right: 20px;
-        padding: 5px; 
-        color: #FAEBD7;        
+  hr {
+     @include breakpoint(small) {width: 70%;
+      margin-right: 20px;}
+     @include breakpoint(large) {width: 80%;
+        margin-right: 20px;}
+  }
+  ul {
+      list-style-type: none;
     }
-    hr {
-        width: 80%;
-        margin-right: 20px;
+ header a { 
+    &:link, &:visited {
+      display: block;
+      text-decoration: none;
+      margin-right: 20px;
+      padding: 5px; 
+      color: $main-background-color;}
     }
-    li:hover {
-        background-color: white;
-        text-decoration: underline;
-    }
-    main {
+  li:hover {
+      background-color: $article-background-color;
+      text-decoration: underline;}
+  main {
+      @include breakpoint(small) {
         display: flex;
         flex-direction: column;
-        background-color: #FAEBD7;
+        background-color: $main-background-color;
+      }
+      @include breakpoint(large) {
+        display: flex;
+        flex-direction: column;
+        background-color: $main-background-color;
         padding-left: 200px;
-        width: 60%;
-        margin: 0 0 0 15px;   
-     }
-     article { 
-        display: block;
-        background-color: white;
-        text-align: left;
-        line-height: 1;
-        font-size: 14px;
-        border: 1px solid white;
-        margin: 25px 30px 20px 30px;
-        box-shadow: 4px 4px 5px 0px rgb(179, 173, 173,1);
-        padding-left: 25px;
-        width: 80%;
-     }
-     figure img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        width: 50%;
-        text-align: center;
-    }
-    .post-date {
+        margin: 0 0 0 15px; 
+      }
+  }  
+
+ article {
+     @include breakpoint(small) {
+         background-color: $article-background-color;
+         text-align: left;
+         padding-left: 20px;
+         line-height: 1;
+         font-size: 14px;
+         border: 1px solid $article-background-color;
+         margin: 30px 15px 15px 30px;
+         margin-right: 20px;
+         box-shadow: 4px 4px 5px 0px rgb(179, 173, 173,1); }
+     @include breakpoint(large) {   
+         display: block;
+         background-color: $article-background-color;
+         text-align: left;
+         line-height: 1;
+         font-size: 14px;
+         border: 1px solid $article-background-color;
+         margin: 25px 30px 20px 30px;
+         box-shadow: 4px 4px 5px 0px rgb(179, 173, 173,1);
+         padding-left: 25px;
+         width: 80%; }
+  }
+  .post-date {
+     @include breakpoint(small) {
+         margin-top: 20px;
+         text-align: left; }
+     @include breakpoint(large) {
         margin-top: 25px;
+     }
+  }
+  .post-content {
+     @include breakpoint(small) {
+         margin-top: -10px; 
+         padding-right: 20px;}  
+     @include breakpoint(large) {
+         margin-top: -10px;
+         padding-right: 35px;
+      } 
+  }
+  figure img {
+     @include breakpoint(small) {
+         width: 100%;
+         margin-top: 30px; }
+     @include breakpoint(large) {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 50px;
+         text-align: center;
+         width: 100%;
+         height: auto;
+     }    
+  }
+   h2 a { 
+     &:link,  &:visited {
+        @include breakpoint(small) {
+            color: $color;
+            text-decoration: none;
+            font-family: Lora;} 
+        @include breakpoint(large) {
+            color: $color;
+            text-decoration: none;
+            font-family: Lora;}
+        }
+     &:hover {
+        @include breakpoint(small) {
+            color: $header-background-color;
+            text-decoration: underline;}
+        @include breakpoint(large) { 
+            color: $header-background-color;
+            text-decoration: underline;} 
+        }   
+    &:active { 
+        color: $active-color; }
     }
-    .post-content {
-        margin-top: -10px;
-        padding-right: 35px;
-    }
-     h2 a:link,  a:visited { 
-        color: black;
-        text-decoration: none;
-        font-family: Lora;
-    } 
-    h2 a:hover {
-        color: #6495ED;
-        text-decoration: underline;
-    }
-    h2 a:active {
-        color: #DEB887;
-    }
-    p {
-        font-size: 12.5px;
-    }
-    p a:link, p a:visited {
-        color: #6495ED; 
-        text-decoration: none;
-    }
-    p a:hover {
-        text-decoration: underline;
-    }
-    p a:active {
-        color: #DEB887;
+  p {
+      font-size: 12.5px;
+  }
+  p a { 
+    &:link, &:visited {
+      color: $header-background-color; 
+      text-decoration: none;}
+    &:hover {
+      text-decoration: underline;}
+    &:active {
+      color: $active-color;  }
     }

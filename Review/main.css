@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
+@media (max-width: 40em) {
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+@media (min-width: 40em) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 40em) {
+  header {
+    display: inline-block;
+    background-color: #6495ED;
+    text-align: right;
+    width: 100%;
+  }
+}
+@media (min-width: 40em) {
+  header {
+    background-color: #6495ED;
+    text-align: right;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+  }
+}
+
+@media (max-width: 40em) {
+  hr {
+    width: 70%;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 40em) {
+  hr {
+    width: 80%;
+    margin-right: 20px;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+header a:link, header a:visited {
+  display: block;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 5px;
+  color: #FAEBD7;
+}
+
+li:hover {
+  background-color: white;
+  text-decoration: underline;
+}
+
+@media (max-width: 40em) {
+  main {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAEBD7;
+  }
+}
+@media (min-width: 40em) {
+  main {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAEBD7;
+    padding-left: 200px;
+    margin: 0 0 0 15px;
+  }
+}
+
+@media (max-width: 40em) {
+  article {
+    background-color: white;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 1;
+    font-size: 14px;
+    border: 1px solid white;
+    margin: 30px 15px 15px 30px;
+    margin-right: 20px;
+    box-shadow: 4px 4px 5px 0px #b3adad;
+  }
+}
+@media (min-width: 40em) {
+  article {
+    display: block;
+    background-color: white;
+    text-align: left;
+    line-height: 1;
+    font-size: 14px;
+    border: 1px solid white;
+    margin: 25px 30px 20px 30px;
+    box-shadow: 4px 4px 5px 0px #b3adad;
+    padding-left: 25px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 40em) {
+  .post-date {
+    margin-top: 20px;
+    text-align: left;
+  }
+}
+@media (min-width: 40em) {
+  .post-date {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 40em) {
+  .post-content {
+    margin-top: -10px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 40em) {
+  .post-content {
+    margin-top: -10px;
+    padding-right: 35px;
+  }
+}
+
+@media (max-width: 40em) {
+  figure img {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 40em) {
+  figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 40em) {
+  h2 a:link, h2 a:visited {
+    color: black;
+    text-decoration: none;
+    font-family: Lora;
+  }
+}
+@media (min-width: 40em) {
+  h2 a:link, h2 a:visited {
+    color: black;
+    text-decoration: none;
+    font-family: Lora;
+  }
+}
+@media (max-width: 40em) {
+  h2 a:hover {
+    color: #6495ED;
+    text-decoration: underline;
+  }
+}
+@media (min-width: 40em) {
+  h2 a:hover {
+    color: #6495ED;
+    text-decoration: underline;
+  }
+}
+h2 a:active {
+  color: #DEB887;
+}
+
+p {
+  font-size: 12.5px;
+}
+
+p a:link, p a:visited {
+  color: #6495ED;
+  text-decoration: none;
+}
+p a:hover {
+  text-decoration: underline;
+}
+p a:active {
+  color: #DEB887;
+}
+
+/*# sourceMappingURL=main.css.map */
